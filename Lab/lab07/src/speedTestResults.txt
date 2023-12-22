@@ -1,0 +1,24 @@
+The InsertRandomSpeedTest:
+When the inserting number is 1000, all 4 maps has run time about 0 sec.
+When the inserting number is 3000, the HashMap is the fatest, with a runtime of 0.02 sec, while other maps has
+as runtime of 0.03 sec.
+When the inserting number is 5000, ULLMap becomes relative slower than the other three maps. It has a runtime
+of 0.15 sec while others have a runtime about 0.02 sec.
+When the inserting number is 10000, ULLMap becomes very slow, with a runtime of 0.38 sec, and BSTMap is the
+fastest, with a runtime of 0.04 sec. TreeMap has 0.05 sec runtime, HashMap has 0.08 sec runtime.
+When the inserting number becomes huge big, 50000, there's a stack overflow for the ULLMap, and BSTMap becomes
+the slowest, with a 0.45 sec runtime. HashMap has the fastest runtime, with 0.25 sec, and TreeMap is 0.3 sec.
+When the inserting number os 100000, there's a stack overflow for the ULLMap, and BSTMap is the slowest, with
+0.8 sec runtime, TreeMap is the fastest, with 0.47 runtime. HasMap has 0.48 sec runtime.
+
+The InsertOrderSpeedTest:
+When the inserting number is 1000, all 4 maps has run time about 0 sec.
+When the inserting number is 5000, BSTMap becomes relative slower than the other three maps. It has a runtime
+of 0.11 sec while ULLMap has 0.05 sec runtime, and both of others have a about 0 sec runtime.
+When the inserting number is 10000, BSTMap becomes very slow, with a runtime of 0.44 sec, and TreeMap is the
+fastest, with a runtime about 0 sec. ULLMap has 0.22 sec runtime, HashMap has 0.02 sec runtime.
+When the inserting number os 20000, there's a stack overflow for the BSTMap, and ULLMap is the slowest, with
+0.84 sec runtime, Both TreeMap and HashMap have 0.03 sec runtime.
+When the inserting number becomes huge big, 50000, there's a stack overflow for bothe the ULLMap and BSTMap,
+and TreeMap becomes the slowest, with a 0.02 sec runtime. HashMap has the fastest runtime, with about 0 sec
+runtime.

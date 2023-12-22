@@ -1,0 +1,29 @@
+InsertRandomSpeedTest: the overall fastest map is Java's HashMap, followed by MyHashMap, and the slowest is the
+ULLMap.
+When inserting 100 strings, both of them have 0.0 sec runtime.
+When inserting 10000 strings, ULLMap has 0.33 sec runtime, while MyHashMap and HashMap has 0.01 sec runtime.
+When inserting 50000 strings, ULLMap is stack overflow. MyHashMap has runtime 0.06 sec, and HashMap has 0.04 sec
+runtime. MyHashMap is within a factor of 10 of HashMap.
+When inserting 100000 strings, ULLMap is stack overflow. MyHashMap has runtime 0.12 sec, and HashMap has 0.09 sec
+runtime. MyHashMap is within a factor of 10 of HashMap.
+
+InsertInOrderSpeedTest: the overall fastest map is Java's HashMap, followed by MyHashMap, and the slowest
+is the ULLMap.
+When inserting 100 strings, both of them have 0.0 sec runtime.
+When inserting 10000 strings, ULLMap has 0.24 sec runtime, while MyHashMap has 0.01 sec runtime, and HashMap
+has runtime about 0.0 sec.
+When inserting 50000 strings, ULLMap is stack overflow. MyHashMap has runtime 0.03 sec, and HashMap has 0.02 sec
+runtime. MyHashMap is within a factor of 10 of HashMap.
+When inserting 100000 strings, ULLMap is stack overflow. MyHashMap has runtime 0.07 sec, and HashMap has 0.04 sec
+runtime. MyHashMap is within a factor of 10 of HashMap.
+If we want to sort our map sets, then it will be better to use the BSTMap.
+
+BucketsSpeedTest: All the buckets type have roughly the same time.
+When inserting 100 strings, all of them have 0.0 sec runtime.
+When inserting 100000 strings, all of them have 0.0 sec runtime, expect Stack and ArrayDeque have 0.01 sec runtime.
+When inserting 5000000 strings, all of them have about 0.11 sec runtime, with 0.01 runtime variation.
+When inserting 10000000 strings, all of them have about 0.20 sec runtime, with 0.01 runtime variation.
+When inserting 100000000 strings, LinkedList is the slowest, with 2.19 sec runtime. Stack and Hashset have 2.10
+sec runtime. ArrayList has 2.08 sec runtime, and ArrayDeque has 2.06 sec runtime.
+If we were able to use constant-time search for the HashSet, our asymptotically for the operation will still
+be O(1). Therefore, asymptotic for the hash table won't speed up.
